@@ -59,6 +59,8 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+
+
     }
 
     &-nav {
@@ -92,6 +94,7 @@
             width: 250px;
             height: 250px;
             background: url('../img/portrait.jpg') center center;
+            background-size: cover;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
