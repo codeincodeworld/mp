@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -43,7 +43,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
     visibility: hidden;
 
     &.show {
@@ -70,6 +69,7 @@
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
+        opacity: 0.9;
 
         &.show {
             //Slide in from top
@@ -80,7 +80,7 @@
     }
 
     &-branding {
-        background: $primary-color;
+        background: rgba($primary-color, 0.9);
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 
@@ -119,7 +119,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 400;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
